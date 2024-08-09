@@ -23,11 +23,11 @@ public class MainWindow extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        // Crear los componentes para la suma
-        parametroA = new JTextField(10);
-        parametroB = new JTextField(10);
-        parametroC = new JTextField(10);
-        botonCalcularSuma = new JButton("Calcular Suma");
+//        // Crear los componentes para la suma
+//        parametroA = new JTextField(10);
+//        parametroB = new JTextField(10);
+//        parametroC = new JTextField(10);
+//        botonCalcularSuma = new JButton("Calcular Suma");
 
         // Crear los componentes para el cálculo de descuento, IVA e Ingresos Brutos
         importeField = new JTextField(10);
@@ -42,16 +42,16 @@ public class MainWindow extends JFrame {
         this.calc = new Calculos();
 
         // Panel para los inputs de suma
-        JPanel panelInputsSuma = new JPanel();
-        panelInputsSuma.setLayout(new GridLayout(4, 2));
-        panelInputsSuma.add(new JLabel("Parámetro A:"));
-        panelInputsSuma.add(parametroA);
-        panelInputsSuma.add(new JLabel("Parámetro B:"));
-        panelInputsSuma.add(parametroB);
-        panelInputsSuma.add(new JLabel("Parámetro C:"));
-        panelInputsSuma.add(parametroC);
-        panelInputsSuma.add(new JLabel(""));  // Placeholder
-        panelInputsSuma.add(botonCalcularSuma);
+//        JPanel panelInputsSuma = new JPanel();
+//        panelInputsSuma.setLayout(new GridLayout(4, 2));
+//        panelInputsSuma.add(new JLabel("Parámetro A:"));
+//        panelInputsSuma.add(parametroA);
+//        panelInputsSuma.add(new JLabel("Parámetro B:"));
+//        panelInputsSuma.add(parametroB);
+//        panelInputsSuma.add(new JLabel("Parámetro C:"));
+//        panelInputsSuma.add(parametroC);
+//        panelInputsSuma.add(new JLabel(""));  // Placeholder
+//        panelInputsSuma.add(botonCalcularSuma);
 
         // Panel para los inputs de detalles
         JPanel panelInputsDetalles = new JPanel();
@@ -71,17 +71,17 @@ public class MainWindow extends JFrame {
 
         // Agregar los paneles a la ventana
         getContentPane().setLayout(new BorderLayout());
-        getContentPane().add(panelInputsSuma, BorderLayout.NORTH);
+        //getContentPane().add(panelInputsSuma, BorderLayout.NORTH);
         getContentPane().add(panelInputsDetalles, BorderLayout.CENTER);
         getContentPane().add(panelResultado, BorderLayout.SOUTH);
 
         // Configurar la acción del botón de suma
-        botonCalcularSuma.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                calcularSuma();
-            }
-        });
+//        botonCalcularSuma.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                calcularSuma();
+//            }
+//        });
 
         // Configurar la acción del botón de detalles
         botonCalcularDetalles.addActionListener(new ActionListener() {
